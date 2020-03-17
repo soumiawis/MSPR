@@ -1,0 +1,11 @@
+easy_admin:
+   entities:
+      Event:
+        class: App\Entity\Event
+      Lieu:
+        class: App\Entity\Lieu
+      Artist:
+        class: App\Entity\Artist
+      Categorie:
+          class: App\Entity\Categorie
+

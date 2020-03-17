@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+
+{% block titre %} WIS EVENT {% endblock %}
+
+
+
+{% block body %}
+    
+    <p>Date : {{ date | date("M - d - Y") }} </p>
+
+    {% if moyen > 5  %}
+        <p>Moyen : {{moyen}} </p>
+    {% else %}
+        <p>Erreeeeeeeeeeeeeeeeeeer</p>
+    {% endif %}
+
+    <ul>
+        {% for user in users %}
+        <li> {{ user | upper }} </li>
+        {% endfor  %}
+    </ul>
+
+
+{% endblock %}
